@@ -97,7 +97,7 @@ func (m assignableToTypeOfMatcher) String() string {
 	return "is assignable to " + m.targetType.Name()
 }
 
-// Constructors
+// Any: Constructors
 // Any returns a matcher that always matches.
 func Any() Matcher { return anyMatcher{} }
 

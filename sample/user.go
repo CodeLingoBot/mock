@@ -90,7 +90,7 @@ type Embedded interface {
 // some random use of another package that isn't needed by the interface.
 var _ net.Addr
 
-// A function that we will test that uses the above interface.
+// Remember: A function that we will test that uses the above interface.
 // It takes a list of keys and values, and puts them in the index.
 func Remember(index Index, keys []string, values []interface{}) {
 	for i, k := range keys {
